@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <p>Personal Info</p>
+        <h1>First , let's cover the basics</h1>
+      </header>
+      <form class="inputField" id="form" action="/" method="GET">
+        <div class="form-control">
+          <input
+            type="text"
+            name="First Name"
+            placeholder="First Name"
+            id="First"
+            onblur="handleBlur(id)"
+          />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <input
+            type="text"
+            name="Middle Name"
+            placeholder="Middle Name (optional)"
+            id="mName"
+            onblur="handleBlur(id)"
+          />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <input
+            type="text"
+            name="Last Name"
+            placeholder="Last Name"
+            id="Last"
+            onblur="handleBlur(id)"
+          />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <input list="Suffix" placeholder="Suffix (optional)" />
+          <datalist id="Suffix">
+            <option value="Mr"></option>
+            <option value="Mrs"></option>
+            <option value="Sir"></option>
+            <option value="Miss"></option>
+          </datalist>
+
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <input
+            type="text"
+            name="SSN or Taxpayer ID"
+            placeholder="SSN or Taxpayer ID"
+            id="TaxId"
+            onblur="handleBlur(id)"
+          />
+          <a href="https://www.google.com/">Why do we need your SSN?</a><br />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <input
+            type="text"
+            name="Confirm SSN or Taxpayer ID"
+            placeholder="Confirm SSN or Taxpayer ID"
+            id="ConfirmTaxId"
+            onblur="handleBlur(id)"
+          />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <input
+            type="date"
+            name="Date of Birth"
+            placeholder="Date of Birth"
+            id="DOB"
+            onblur="handleBlur(id)"
+          />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <input
+            type="text"
+            name="Mother's Maiden Name"
+            placeholder="Mother's Maiden Name"
+            id="MMN"
+            onblur="handleBlur(id)"
+          />
+          <small>Error message</small>
+        </div>
+        <button type="Submit" id="btn" disabled="disabled">Continue</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
